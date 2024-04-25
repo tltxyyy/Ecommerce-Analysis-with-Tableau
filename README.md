@@ -28,23 +28,22 @@ According to the distribution of sellers by seller state, most of the sellers ar
    <img width="756" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ae8920f3-640c-474b-a9d1-c32c6c759802">
 
 
-#### popular category
-
 #### Customer Buying Trends
+To understand customer purchasing trends, the total orders by day of the week and timing have been analysed. Surprisingly, there are fewer purchases made on the weekends compared to the weekdays as a percentage of all orders. This contrasts with our expectations of higher traffic and therefore, a higher volume of purchases on the weekends compared to the weekdays. 
 <img width="959" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ab70890d-61b3-42c6-b432-c73e98b3fc4b">
-
+The order from the most popular time period to make a purchase is as follows: “Afternoon”, “Evening”, “Morning”, and “Late Night/Early Morning”. A reason for this could be that the majority of customer browsing sessions take place during working hours, evidenced by the high percentage of purchases made on Monday through Friday during regular office hours in the “Afternoon”. This may also explain why there are more customer purchases made in the “Evening” than “Afternoon” on Sundays, as Sundays are typically a non-working day, and the afternoons are usually reserved for leisure time.
 
 #### Products with the highest average late delivery days
 <img width="696" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/57a2933b-a46a-4426-80f5-d33e2e9c7b9d">
 From the graph, it can be seen that generally bulky items, such as furniture, household appliances, mattress and air-conditioning, have the highest average number of late deliveries. This suggests that Olist could focus on these areas more to lower the number of late delivery days and improve its customers’ experience. 
-
 
 #### Average processing time per state
 <img width="673" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/c6eea9b0-7c55-49e7-aa43-2bcd5cef3e1b">
 Understanding the average number of days taken for a purchase to reach the customer in each state might also give us an insight into where most of the late deliveries occur. It can be observed that the northern regions of Brazil have a much higher average processing time compared to the southern regions. This suggests that delivery logistics in that area are not so developed and Olist can look into ways to reduce the average number of days in the northern regions. 
 
 ### Word Cloud
-In order to first understand some of the possible reasons for poor customer reviews, we identified the category group with the highest percentage of poor reviews which was “Furniture, Home and Garden”. 
+In order to first understand some of the possible reasons for poor customer reviews, we identified the category group with the highest percentage of poor reviews which was “Furniture, Home and Garden”.
+
 After translating all customer reviews from Portuguese to English, a word cloud was generated to identify some of the possible reasons for poor customer reviews. Unnecessary words (e.g., auxiliary verbs, articles, etc.) that did not provide us with any insight were excluded in the word cloud. Based on the word cloud, words relating to delivery were most prominent, such as “delivered, received, came, not”. As such, we decided to analyse the relationship between late deliveries and poor review scores. 
 
 <img width="1001" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/02f49c55-624e-4487-b58b-c79105927764">
@@ -54,13 +53,11 @@ A bar graph was plotted to investigate the relationship between customer reviews
 <img width="981" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/0e4d1f88-8fbd-4904-9505-6dd2bc9583a8">
 
 
-
 Such a relationship between late deliveries and bad reviews is also illustrated in the scatter graph. There is a positive relationship between late deliveries and poor reviews. However, the trend line only has an R-squared value of approximately 0.4 which shows a low positive correlation. In other words, late deliveries do not fully explain the result of a negative review and it could be due to many other possible factors such as product quality or customer service. This is also reflected in the data points with low late deliveries but still has a high proportion of poor reviews.
 <img width="960" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/dce6f375-cc80-43d7-b8b1-4a4c193c89f1">
 
 
-
-###Dashboard
+## Dashboard
 In light of previous insights, I created two dashboards. 
 
 The first dashboard is a top-level dashboard that highlights the main KPIs, sales trend, category performance and buyer/seller distribution to monitor sales performance on a higher level. This allows the user to understand customer behaviour and trends all in one platform.
