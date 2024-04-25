@@ -3,6 +3,7 @@
 ## Summary of Project
 * The primary objective of this project is to craft compelling visualizations that narrate insightful stories and provide actionable intelligence, empowering stakeholders to make informed decisions.
 * We were given the liberty to search and select our own dataset and business problem to work on, and we decided to work on this dataset from Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) due to the extensiveness of records.
+* Tableau was not main software we used to conduct data cleaning, analysis and visualisation, accompanied with Excel.
 * This was a 3 person group work which we individually did our own data exploration before combining to tell a full story. The parts which I was mainly in charge of was Poor reviews and creating the two dashboards.
 
 ## 
