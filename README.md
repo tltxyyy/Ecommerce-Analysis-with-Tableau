@@ -7,6 +7,11 @@
 * This was a 3 person group work which we individually did our own data exploration before combining to tell a full story. The parts which I was mainly in charge of was Poor reviews and creating the two dashboards.
 * Note: This is just a extract of the project we did, showcasing the parts which I mainly contributed.
 
+## Project Aim
+* Understand customer behaviour and trends
+* Enhance delivery performance
+* Improve online shopping experience
+
 ## Data Cleaning & Methodology
 The Olist dataset is a Brazilian e-commerce public dataset that contains information of about 100,000 orders from 2016 to 2018. Due to the size of the dataset, it was further divided into multiple datasets for better comprehension and organisation: 1) customers, 2) geolocation, 3) order items, 4) order payments, 5) order reviews, 6) orders, 7) products, 8) sellers. 
 
@@ -16,18 +21,14 @@ The Olist dataset is a Brazilian e-commerce public dataset that contains informa
 All datasets are cleaned and joint with one another through foreign keys prior to analysis. Specifically, missing values were dealt with, inconsistent fields and outliers were filtered away, new fields were created for better analysis, etc. After cleaning the datasets, we joined the 8 datasets by data blending, and null values are excluded altogether since there were only a few in the whole joined dataset. Aliases were also blended into the data source to translate product category names and full state names.
 
 ## Exploratory Data Analysis
-We looked at:
-
 
 ### Sellers by seller state and the population
 According to the distribution of sellers by seller state, most of the sellers are based in the south of Brazil, which is reasonable as most of the population of Brazil lives around the area. However, compared with the population distribution of Brazil (shown below), several states with a large population, such as Bahia (i.e. BA), do not have a correspondingly large number of sellers.
-   <img width="339" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/3ab51910-94fa-41dd-8945-cc13197fa4aa">
 
    <img width="756" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ae8920f3-640c-474b-a9d1-c32c6c759802">
 
 
 #### popular category
-<img width="901" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/e8098a43-87c7-4425-9e5c-9b59a51bcdd2">
 
 #### Customer Buying Trends
 <img width="959" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ab70890d-61b3-42c6-b432-c73e98b3fc4b">
@@ -42,7 +43,7 @@ From the graph, it can be seen that generally bulky items, such as furniture, ho
 <img width="673" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/c6eea9b0-7c55-49e7-aa43-2bcd5cef3e1b">
 Understanding the average number of days taken for a purchase to reach the customer in each state might also give us an insight into where most of the late deliveries occur. It can be observed that the northern regions of Brazil have a much higher average processing time compared to the southern regions. This suggests that delivery logistics in that area are not so developed and Olist can look into ways to reduce the average number of days in the northern regions. 
 
-Word Cloud
+### Word Cloud
 In order to first understand some of the possible reasons for poor customer reviews, we identified the category group with the highest percentage of poor reviews which was “Furniture, Home and Garden”. 
 After translating all customer reviews from Portuguese to English, a word cloud was generated to identify some of the possible reasons for poor customer reviews. Unnecessary words (e.g., auxiliary verbs, articles, etc.) that did not provide us with any insight were excluded in the word cloud. Based on the word cloud, words relating to delivery were most prominent, such as “delivered, received, came, not”. As such, we decided to analyse the relationship between late deliveries and poor review scores. 
 
@@ -62,7 +63,7 @@ Such a relationship between late deliveries and bad reviews is also illustrated 
 ###Dashboard
 In light of previous insights, I created two dashboards. 
 
-The first dashboard is a top-level dashboard that highlights the main KPIs, sales trend, category performance and buyer/seller distribution to monitor sales performance on a higher level.
+The first dashboard is a top-level dashboard that highlights the main KPIs, sales trend, category performance and buyer/seller distribution to monitor sales performance on a higher level. This allows the user to understand customer behaviour and trends all in one platform.
 <img width="980" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/40dd28c8-f31d-42e3-99f4-c769b08d354f">
 
 The second dashboard aims to improve the frequency of poor reviews.
