@@ -50,8 +50,9 @@ Such a relationship between late deliveries and bad reviews is also illustrated 
 
 
 
-Dashboard
+###Dashboard
 In light of previous insights, I created two dashboards. 
+
 The first dashboard is a top-level dashboard that highlights the main KPIs, sales trend, category performance and buyer/seller distribution to monitor sales performance on a higher level.
 <img width="980" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/40dd28c8-f31d-42e3-99f4-c769b08d354f">
 
