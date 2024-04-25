@@ -5,33 +5,42 @@
 * We were given the liberty to search and select our own dataset and business problem to work on, and we decided to work on this dataset from Kaggle (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) due to the extensiveness of records.
 * Tableau was not main software we used to conduct data cleaning, analysis and visualisation, accompanied with Excel.
 * This was a 3 person group work which we individually did our own data exploration before combining to tell a full story. The parts which I was mainly in charge of was Poor reviews and creating the two dashboards.
+* Note: This is just a extract of the project we did, showcasing the parts which I mainly contributed.
 
-## 
-
-### Data Cleaning & Methodology
+## Data Cleaning & Methodology
 The Olist dataset is a Brazilian e-commerce public dataset that contains information of about 100,000 orders from 2016 to 2018. Due to the size of the dataset, it was further divided into multiple datasets for better comprehension and organisation: 1) customers, 2) geolocation, 3) order items, 4) order payments, 5) order reviews, 6) orders, 7) products, 8) sellers. 
 
 <img width="901" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/0692246c-1dd6-46d3-a87c-f3decd2777e9">
 <img width="1042" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/cb79d197-6b2d-42b0-8b8d-cc269590710c">
 
-
 All datasets are cleaned and joint with one another through foreign keys prior to analysis. Specifically, missing values were dealt with, inconsistent fields and outliers were filtered away, new fields were created for better analysis, etc. After cleaning the datasets, we joined the 8 datasets by data blending, and null values are excluded altogether since there were only a few in the whole joined dataset. Aliases were also blended into the data source to translate product category names and full state names.
 
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 We looked at:
 
 
-1. Sellers by seller state and the population
+### Sellers by seller state and the population
+According to the distribution of sellers by seller state, most of the sellers are based in the south of Brazil, which is reasonable as most of the population of Brazil lives around the area. However, compared with the population distribution of Brazil (shown below), several states with a large population, such as Bahia (i.e. BA), do not have a correspondingly large number of sellers.
    <img width="339" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/3ab51910-94fa-41dd-8945-cc13197fa4aa">
 
    <img width="756" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ae8920f3-640c-474b-a9d1-c32c6c759802">
 
 
-popular category
+#### popular category
 <img width="901" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/e8098a43-87c7-4425-9e5c-9b59a51bcdd2">
 
-Customer Buying Trends
+#### Customer Buying Trends
 <img width="959" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/ab70890d-61b3-42c6-b432-c73e98b3fc4b">
+
+
+#### Products with the highest average late delivery days
+<img width="696" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/57a2933b-a46a-4426-80f5-d33e2e9c7b9d">
+From the graph, it can be seen that generally bulky items, such as furniture, household appliances, mattress and air-conditioning, have the highest average number of late deliveries. This suggests that Olist could focus on these areas more to lower the number of late delivery days and improve its customers’ experience. 
+
+
+#### Average processing time per state
+<img width="673" alt="image" src="https://github.com/tltxyyy/Ecommerce-Analysis-with-Tableau/assets/69724535/c6eea9b0-7c55-49e7-aa43-2bcd5cef3e1b">
+Understanding the average number of days taken for a purchase to reach the customer in each state might also give us an insight into where most of the late deliveries occur. It can be observed that the northern regions of Brazil have a much higher average processing time compared to the southern regions. This suggests that delivery logistics in that area are not so developed and Olist can look into ways to reduce the average number of days in the northern regions. 
 
 Word Cloud
 In order to first understand some of the possible reasons for poor customer reviews, we identified the category group with the highest percentage of poor reviews which was “Furniture, Home and Garden”. 
